@@ -1,0 +1,77 @@
+<mujoco model="srh scene">
+  <visual>
+    <global azimuth="120" elevation="-20" offwidth="1800" offheight="1800"/>
+  </visual>
+
+  <compiler autolimits="true" meshdir="assets" angle="radian"/> <!-- convexhull="false" -->
+
+  <option timestep="0.002" iterations="20">
+      <flag warmstart="enable" override="enable" nativeccd="enable"/>
+  </option>
+
+  <option><flag multiccd="enable"/></option>
+  
+  <statistic center="0.3 0 0.4" extent="0.8"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+  </visual>
+
+  <default>
+    <default class="obj_visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="obj_collision">
+      <geom group="3" type="mesh" solimp="0.9 0.99 .0001" solref=".001 1" condim="6" contype="7"/>
+    </default>
+  </default>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+
+  <include file="srh.xml"/>
+
+  <include file="../../../obj/ycb_024_bowl.xml"/>
+
+  <worldbody>
+    <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+    <light directional="true" ambient="0.2 0.2 0.2" diffuse="0.8 0.8 0.8" specular="0.3 0.3 0.3" castshadow="false" pos="0 1 4" dir="0 0 -1" name="light0"/>
+    <geom name="floor" pos="0 0 0" size="0 0 0.05" type="plane" material="groundplane"/>
+
+    <body name="base" pos="0 0 0">
+      <geom name="base" pos="0 0 0" size="0.1 0.1 0.1" type="box" contype="0"/>
+    </body>
+
+    <!-- don't change height, or mjBase should also be changed -->
+    <body name="table" pos="0.5 0 0.35">
+      <geom name="table" pos="0 0 0" size="0.3 0.5 0.35" type="box"/>
+    </body>
+
+    <body name="camera_tracker" pos="0 0 1.2" euler="0 -1.5707 -1.5707" mocap="true">
+      <geom type="box" size=".01 .01 .01" rgba="1.0 0.5 0 0.3" group="1" condim="1" contype="0" conaffinity="0"/>
+    </body>
+    <body gravcomp="1" name="camera_dummy_base" pos="0 0 1.2" euler="0 -1.5707 -1.5707">
+      <freejoint/>
+      <!-- <camera name="left_camera" pos="-0.032 0 0" mode="fixed" ipd="0.05" euler="0 0 0" fovy="40" />
+      <camera name="right_camera" pos="0.032 0 0" mode="fixed" ipd="0.05" euler="0 0 0" fovy="40" /> -->
+      <camera name="camera" pos="0 0 0" mode="fixed" ipd="0.05" euler="0 0 0" fovy="30"/>
+      <geom name="camera" pos="0 0 0" size="0.01 0.01 0.01" type="box" mass="0.01"/>
+    </body>
+  </worldbody>
+
+    <equality>
+        <weld body1="camera_tracker" body2="camera_dummy_base" torquescale="1" solimp="0.999 .9999 .00001" solref=".001 5"/>
+    </equality>
+
+  <keyframe>
+    <key name="teleop" qpos="0.1 0 1.0 1 1 1 1      0 0 0 0      0 0 0 0      0 0 0 0      0 0 0 0 0      0 0 0 0 0      0 0 1.2 1 1 -1 -1      " ctrl="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+
+    <key name="grasp_demo" qpos="0.51822 -0.02860 0.84288 0.37406 0.53206 0.66942 0.35898 -0.32415 0.76506 0.78446 0.78242 -0.02071 1.03910 0.65706 0.65602 -0.12989 -0.18682 0.69219 0.69105 0.10201 -0.34902 -0.26181 0.44597 0.44473 0.33513 0.94625 0.17820 0.17405 0.20349 0.63282 0.26136 0.94137 0.45058 -0.30081 -0.31790 -0.77809" ctrl="-0.33346 0.85088 0.86004 -0.02144 -0.03935 0.65743 -0.12904 -0.18687 0.69112 0.10206 -0.45572 -0.30026 0.44135 0.41201 0.85847 -0.13755 0.36098 0.26534"/>
+
+  </keyframe>
+
+</mujoco>

@@ -1,0 +1,4 @@
+newmtl ycb_062_dice
+# shader_type beckmann
+map_Kd ycb_062_dice.png
+

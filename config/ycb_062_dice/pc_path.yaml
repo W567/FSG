@@ -1,0 +1,12 @@
+link_pc_paths:
+- workspace/ycb_062_dice/finger_link_0.pcd
+- workspace/ycb_062_dice/finger_link_1.pcd
+- None
+- None
+- None
+ws_pc_paths:
+- workspace/ycb_062_dice/thu.pcd
+- workspace/ycb_062_dice/ind.pcd
+- None
+- None
+- None

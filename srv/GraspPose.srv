@@ -1,0 +1,11 @@
+int32 angle_num
+int32 finger_num
+string obj_pc_topic
+string obj_bottom_frame
+bool with_aff
+---
+int32 num
+geometry_msgs/PoseArray poses
+std_msgs/Float32MultiArray angles
+float32[] scores
+float32 time

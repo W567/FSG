@@ -1,0 +1,67 @@
+palm_name: hand/bhand_palm_link
+tip_namelist:
+- hand/finger_3/dist_link
+- hand/finger_1/dist_link
+- hand/finger_2/dist_link
+
+pc_namelist:
+- thu
+- ind
+- mid
+
+tip_mesh_namelist:
+- "bhand_finger_dist_link_convex.dae"
+- "bhand_finger_dist_link_convex.dae"
+- "bhand_finger_dist_link_convex.dae"
+tip_y_direction_list:
+- -1
+- -1
+- -1
+
+nstep: 2
+
+angle_range_list:
+  hand/finger_1/prox_joint:
+    min: 0.0
+    max: 30.0
+    step: 10
+  hand/finger_1/med_joint:
+    min: 40.0
+    max: 80.0
+    step: 10
+  hand/finger_1/dist_joint:
+    min:  0.0
+    max: 30.0
+    step: 10
+  hand/finger_2/prox_joint:
+    min: 0.0
+    max: 30.0
+    step: 10
+  hand/finger_2/med_joint:
+    min: 40.0
+    max: 80.0
+    step: 10
+  hand/finger_2/dist_joint:
+    min:  0.0
+    max: 30.0
+    step: 10
+  hand/finger_3/med_joint:
+    min: 40.0
+    max: 80.0
+    step: 10
+  hand/finger_3/dist_joint:
+    min:  0.0
+    max: 30.0
+    step: 10
+
+init_pose:
+  hand/finger_1/prox_joint: 0.0
+  hand/finger_1/med_joint:  0.0
+  hand/finger_1/dist_joint: 0.0
+  hand/finger_2/prox_joint: 0.0
+  hand/finger_2/med_joint:  0.0
+  hand/finger_2/dist_joint: 0.0
+  hand/finger_2/med_joint:  0.0
+  hand/finger_2/dist_joint: 0.0
+
+underactuated: [0, 0, 0]

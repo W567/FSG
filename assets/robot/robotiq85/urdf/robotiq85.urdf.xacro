@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robotiq85">
+  <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85_model_macro.xacro" />
+  <xacro:robotiq_arg2f_85 prefix="" />
+  <link name="ik_palm" />
+  <joint name="ik_palm_joint" type="fixed">
+    <parent link="robotiq_arg2f_base_link" />
+    <child link="ik_palm" />
+    <origin xyz="0 0 0" rpy="-1.5707963267948966 -2.220446049250313e-16 1.5707963267948963" />
+  </joint>
+</robot>

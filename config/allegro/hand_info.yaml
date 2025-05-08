@@ -1,0 +1,9 @@
+finger_angle_num: 4
+finger_num: 4
+palm_min_max:
+- -0.0565
+- 0.0565
+- -0.0113
+- 1.0
+- -0.095
+- 0.0017

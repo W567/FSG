@@ -1,0 +1,12 @@
+link_pc_paths:
+- workspace/ycb_024_bowl/finger_link_0.pcd
+- workspace/ycb_024_bowl/finger_link_1.pcd
+- workspace/ycb_024_bowl/finger_link_2.pcd
+- None
+- None
+ws_pc_paths:
+- workspace/ycb_024_bowl/thu.pcd
+- workspace/ycb_024_bowl/ind.pcd
+- workspace/ycb_024_bowl/mid.pcd
+- None
+- None

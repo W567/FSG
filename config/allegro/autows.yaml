@@ -1,0 +1,112 @@
+palm_name: base_link
+tip_namelist:
+- thu_link_tip
+- for_link_tip
+- mid_link_tip
+- rin_link_tip
+
+pc_namelist:
+- thu
+- ind
+- mid
+- rin
+
+tip_mesh_namelist:
+- "link_15.0_tip.STL"
+- "link_3.0_tip.STL"
+- "link_3.0_tip.STL"
+- "link_3.0_tip.STL"
+
+tip_y_direction_list:
+- -1
+- 1
+- 1
+- 1
+
+nstep: 2
+
+angle_range_list:
+
+  FFJ_0:
+    min: -20
+    max: 20
+    step: 10
+  FFJ_1:
+    min: 10
+    max: 50
+    step: 10
+  FFJ_2:
+    min: 10
+    max: 40
+    step: 10
+  FFJ_3:
+    min: 10
+    max: 40
+    step: 10
+  MFJ_0:
+    min: -20
+    max: 20
+    step: 10
+  MFJ_1:
+    min: 10
+    max: 50
+    step: 10
+  MFJ_2:
+    min: 10
+    max: 40
+    step: 10
+  MFJ_3:
+    min: 10
+    max: 40
+    step: 10
+  RFJ_0:
+    min: -20
+    max: 20
+    step: 10
+  RFJ_1:
+    min: 10
+    max: 50
+    step: 10
+  RFJ_2:
+    min: 10
+    max: 40
+    step: 10
+  RFJ_3:
+    min: 10
+    max: 40
+    step: 10
+  THJ_0:
+    min: 65
+    max: 75
+    step: 10
+  THJ_1:
+    min:  0
+    max: 30
+    step: 10
+  THJ_2:
+    min: -10
+    max: 30
+    step: 10
+  THJ_3:
+    min: -10
+    max: 30
+    step: 10
+init_pose:
+  FFJ_0: 0.0
+  FFJ_1: 0.0
+  FFJ_2: 0.0
+  FFJ_3: 0.0
+  MFJ_0: 0.0
+  MFJ_1: 0.0
+  MFJ_2: 0.0
+  MFJ_3: 0.0
+  RFJ_0: 0.0
+  RFJ_1: 0.0
+  RFJ_2: 0.0
+  RFJ_3: 0.0
+  THJ_0: 0.0
+  THJ_1: 0.0
+  THJ_2: 0.0
+  THJ_3: 0.0
+
+underactuated: [0, 0, 0, 0]

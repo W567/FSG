@@ -1,0 +1,7 @@
+robot_name: 'barrett'
+
+hand_jnt_size: 8
+fin_idx_bridge: [3, 4, 5, 6, 7, 8, 0, 1]
+
+obj_threshold: 100
+num_try_on_grasp_threshold: 3000

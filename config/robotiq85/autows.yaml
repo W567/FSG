@@ -1,0 +1,39 @@
+palm_name: robotiq_arg2f_base_link
+tip_namelist:
+- left_inner_finger_pad
+- right_inner_finger_pad
+pc_namelist:
+- left
+- right
+tip_body_namelist:
+- left_inner_finger_pad
+- right_inner_finger_pad
+tip_mesh_namelist:
+- box_0.022_0.00635_0.0375.stl
+- box_0.022_0.00635_0.0375.stl
+
+# if y is pointing down, set to -1, otherwise 1
+# if y is always 0, set to either -1 or 1
+tip_y_direction_list:
+- 1
+- 1
+
+nstep: 5
+
+angle_range_list:
+  finger_joint:
+    min: 0
+    max: 45
+    step: 5
+  right_outer_knuckle_joint:
+    min: 0
+    max: 45
+    step: 5
+init_pose:
+  finger_joint: 0.0
+  left_inner_knuckle_joint: 0.0
+  left_inner_finger_joint: 0.0
+  right_outer_knuckle_joint: 0.0
+  right_inner_knuckle_joint: 0.0
+  right_inner_finger_joint: 0.0
+underactuated: [0, 0]

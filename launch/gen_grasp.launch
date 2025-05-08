@@ -1,0 +1,58 @@
+<launch>
+  <arg name="robot_hand" default="srh" />
+  <arg name="filename" default="grasp_res.h5" />
+  <arg name="with_aff" default="true" />
+  <arg name="aff_id" default="0" />
+  <arg name="obj_folder_name" default="obj" />
+  <arg name="ws_type" default="0" /> <!-- 0: object specific, 1: general -->
+
+  <rosparam command="load" subst_value="True">
+    robot_hand: $(arg robot_hand)
+    filename: $(arg filename)
+    with_aff: $(arg with_aff)
+    aff_id: $(arg aff_id)
+    obj_folder_name: $(arg obj_folder_name)
+    ws_type: $(arg ws_type)
+  </rosparam>
+
+  <arg name="thread_num" default="12" />
+  <arg name="outer_iter" default="200" />
+  <arg name="inner_iter" default="15" />
+  <arg name="with_objPrepro" default="True" />
+  <arg name="with_palmFilter" default="False" />
+  <arg name="with_finIter" default="True" />
+  <arg name="length" default="1000" />
+  <arg name="gws_thre" default="0.0" />
+  <arg name="palm_h_thre" default="-10" />
+  <arg name="tip_interval" default="0.02" />
+  <arg name="fin_collision_thre" default="-10" />
+  <arg name="standalone" default="True" />
+  <arg name="mode" default="-1" /> <!-- -1: dataset, 1: grasp -->
+  <arg name="with_linkColFilter" default="True" />
+  <rosparam command="load" subst_value="True">
+    thread_num: $(arg thread_num)
+    outer_iter: $(arg outer_iter)
+    inner_iter: $(arg inner_iter)
+    with_objPrepro: $(arg with_objPrepro)
+    with_palmFilter: $(arg with_palmFilter)
+    with_finIter: $(arg with_finIter)
+    length: $(arg length)
+    gws_thre: $(arg gws_thre)
+    palm_h_thre: $(arg palm_h_thre)
+    tip_interval: $(arg tip_interval)
+    fin_collision_thre: $(arg fin_collision_thre)
+    standalone: $(arg standalone)
+    mode: $(arg mode)
+    with_linkColFilter: $(arg with_linkColFilter)
+  </rosparam>
+
+  <rosparam command="load" file="$(find fsg)/config/$(arg robot_hand)/hand_info.yaml" />
+  <node name="fsgServer" pkg="fsg" type="fsgServer" />
+
+  <node name="pcCurvFilter" pkg="pcl_interface" type="pcCurvServer.py" output="screen" unless="$(arg with_aff)">
+    <param name="with_pub" value="true" />
+  </node>
+
+  <rosparam command="load" file="$(find fsg)/config/$(arg robot_hand)/gen.yaml" />
+  <node name="saver" pkg="fsg" type="saver_grasp.py" output="screen" required="true" />
+</launch>

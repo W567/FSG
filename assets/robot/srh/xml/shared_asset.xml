@@ -1,0 +1,31 @@
+<mujoco>
+    <texture name="robot0:texplane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.1 0.15 0.2" width="512" height="512"></texture>
+    <texture name="robot0:texgeom" type="cube" builtin="flat" mark="cross" width="127" height="127" rgb1="0.3 0.6 0.5" rgb2="0.3 0.6 0.5" markrgb="0 0 0" random="0.01"></texture>
+
+    <material name="robot0:MatGnd" reflectance="0.5" texture="robot0:texplane" texrepeat="1 1" texuniform="true"></material>
+    <material name="robot0:MatColl" specular="1" shininess="0.3" reflectance="0.5" rgba="0.4 0.5 0.6 1"></material>
+    <material name="robot0:MatViz" specular="0.75" shininess="0.1" reflectance="0.5" rgba="0.93 0.93 0.93 1"></material>
+    <material name="robot0:object" texture="robot0:texgeom" texuniform="false"></material>
+    <material name="floor_mat" specular="0" shininess="0.5" reflectance="0" rgba="0.2 0.2 0.2 0"></material>
+
+    <material name="black" specular="0.5" shininess="0.25" rgba="0.16355 0.16355 0.16355 1"/>
+    <material name="gray" specular="0.0" shininess="0.25" rgba="0.80848 0.80848 0.80848 1"/>
+    <material name="metallic" specular="0" shininess="0.25" rgba="0.9 0.9 0.9 1"/>
+
+    <mesh name="robot0:forearm0"     scale="0.001 0.001 0.001"  file="srh/forearm_0.obj"></mesh>
+    <mesh name="robot0:forearm1"     scale="0.001 0.001 0.001"  file="srh/forearm_1.obj"></mesh>
+    <mesh name="robot0:forearm_cvx"  scale="0.001 0.001 0.001"  file="srh/forearm_collision.obj"></mesh>
+    <mesh name="robot0:wrist"        scale="0.001 0.001 0.001"  file="srh/wrist.obj"></mesh>
+    <mesh name="robot0:palm"         scale="0.001 0.001 0.001"  file="srh/palm.obj"></mesh>
+    <mesh name="robot0:knuckle"      scale="0.001 0.001 0.001"  file="srh/f_knuckle.obj"></mesh>
+    <mesh name="robot0:F3"           scale="0.001 0.001 0.001"  file="srh/f_proximal.obj"></mesh>
+    <mesh name="robot0:F2"           scale="0.001 0.001 0.001"  file="srh/f_middle.obj"></mesh>
+    <mesh name="robot0:F1"           scale="0.001 0.001 0.001"  file="srh/f_distal_pst.obj"></mesh>
+    <mesh name="robot0:lfmetacarpal" scale="0.001 0.001 0.001"  file="srh/lf_metacarpal.obj"></mesh>
+    <mesh name="robot0:TH3_z"        scale="0.001 0.001 0.001"  file="srh/th_proximal.obj"></mesh>
+    <mesh name="robot0:TH2_z"        scale="0.001 0.001 0.001"  file="srh/th_middle.obj"></mesh>
+    <mesh name="robot0:TH1_z"        scale="0.001 0.001 0.001"  file="srh/th_distal_pst.obj"></mesh>
+
+    <mesh name="robot0:TH1_s" scale="0.001 0.001 0.001" file="srh/simp_th_distal.obj"></mesh>
+    <mesh name="robot0:F1_s" scale="0.001 0.001 0.001"  file="srh/simp_f_distal.obj"></mesh>
+</mujoco>

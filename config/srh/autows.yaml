@@ -1,0 +1,156 @@
+palm_name: rh_palm
+# list of urdf tip body names based on priority
+tip_namelist:
+- rh_thdistal
+- rh_ffdistal
+- rh_mfdistal
+- rh_rfdistal
+- rh_lfdistal
+# list of corresponding point cloud names
+pc_namelist:
+- thu
+- ind
+- mid
+- rin
+- lit
+# list of corresponding mujoco tip body names
+tip_body_namelist:
+- rh_thdistal
+- rh_ffdistal
+- rh_mfdistal
+- rh_rfdistal
+- rh_lfdistal
+# list of corresponding urdf tip mesh names
+tip_mesh_namelist:
+- "th_distal_pst.obj"
+- "f_distal_pst.obj"
+- "f_distal_pst.obj"
+- "f_distal_pst.obj"
+- "f_distal_pst.obj"
+
+# if y is pointing down, set to -1, otherwise 1
+# if y is always 0, set to either -1 or 1
+tip_y_direction_list:
+- -1
+- 1
+- 1
+- 1
+- 1
+
+nstep: 2
+
+angle_range_list:
+  rh_FFJ4:
+    min: -10
+    max: 10
+    step: 10
+  rh_FFJ3:
+    min: 20
+    max: 50
+    step: 10
+  rh_FFJ2:
+    min: 10
+    max: 40
+    step: 10
+  rh_FFJ1:
+    min: 10
+    max: 40
+    step: 10
+  rh_MFJ4:
+    min: -10
+    max: 10
+    step: 10
+  rh_MFJ3:
+    min: 20
+    max: 50
+    step: 10
+  rh_MFJ2:
+    min: 10
+    max: 40
+    step: 10
+  rh_MFJ1:
+    min: 10
+    max: 40
+    step: 10
+  rh_RFJ4:
+    min: -10
+    max: 10
+    step: 10
+  rh_RFJ3:
+    min: 20
+    max: 50
+    step: 10
+  rh_RFJ2:
+    min: 10
+    max: 40
+    step: 10
+  rh_RFJ1:
+    min: 10
+    max: 40
+    step: 10
+  rh_LFJ5:
+    min: 0.0
+    max: 1.0
+    step: 10
+  rh_LFJ4:
+    min: -10
+    max: 10
+    step: 10
+  rh_LFJ3:
+    min: 20.0
+    max: 50.0
+    step: 10
+  rh_LFJ2:
+    min: 10
+    max: 40
+    step: 10
+  rh_LFJ1:
+    min: 10
+    max: 40
+    step: 10
+  rh_THJ5:
+    min: 10
+    max: 30
+    step: 10
+  rh_THJ4:
+    min: 50
+    max: 70
+    step: 10
+  rh_THJ3:
+    min: -10
+    max: 10
+    step: 10
+  rh_THJ2:
+    min: -20
+    max: 20
+    step: 10
+  rh_THJ1:
+    min: -10
+    max: 30
+    step: 10
+init_pose:
+#   rh_WRJ2: 0.0
+#   rh_WRJ1: 0.0
+  rh_FFJ4: 0.0
+  rh_FFJ3: 0.0
+  rh_FFJ2: 0.0
+  rh_FFJ1: 0.0
+  rh_MFJ4: 0.0
+  rh_MFJ3: 0.0
+  rh_MFJ2: 0.0
+  rh_MFJ1: 0.0
+  rh_RFJ4: 0.0
+  rh_RFJ3: 0.0
+  rh_RFJ2: 0.0
+  rh_RFJ1: 0.0
+  rh_LFJ5: 0.0
+  rh_LFJ4: 0.0
+  rh_LFJ3: 0.0
+  rh_LFJ2: 0.0
+  rh_LFJ1: 0.0
+  rh_THJ5: 0.0
+  rh_THJ4: 0.0
+  rh_THJ3: 0.0
+  rh_THJ2: 0.0
+  rh_THJ1: 0.0
+underactuated: [0, 1, 1, 1, 1]

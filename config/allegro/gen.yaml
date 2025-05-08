@@ -1,0 +1,7 @@
+robot_name: 'allegro'
+
+hand_jnt_size: 16
+fin_idx_bridge: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0, 1, 2, 3]
+
+obj_threshold: 100
+num_try_on_grasp_threshold: 3000

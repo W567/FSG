@@ -1,0 +1,10 @@
+link_pc_paths:
+- workspace/allegro/finger_link_0.pcd
+- workspace/allegro/finger_link_1.pcd
+- workspace/allegro/finger_link_2.pcd
+- workspace/allegro/finger_link_3.pcd
+ws_pc_paths:
+- workspace/allegro/thu.pcd
+- workspace/allegro/ind.pcd
+- workspace/allegro/mid.pcd
+- workspace/allegro/rin.pcd

@@ -1,0 +1,13 @@
+sympy
+open3d
+numpy
+pandas
+mujoco
+scikit-robot
+urdfpy
+trimesh
+scipy
+rospkg
+matplotlib
+pyyaml
+scikit-robot

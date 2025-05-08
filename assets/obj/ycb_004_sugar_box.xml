@@ -1,0 +1,16 @@
+<mujoco model="ycb_004_sugar_box">
+  <asset>
+    <texture type="2d" name="ycb_004_sugar_box" file="../../../obj/ycb_004_sugar_box.png"/>
+    <material name="ycb_004_sugar_box" texture="ycb_004_sugar_box" specular="0.0" shininess="0.0" rgba="1 1 1 0.5"/>
+    <mesh file="../../../../obj/ycb_004_sugar_box.obj"/>
+    <mesh file="../../../../obj/ycb_004_sugar_box_collision_0.obj"/>
+    <mesh file="../../../../obj/ycb_004_sugar_box_collision_1.obj"/>
+  </asset>
+  <worldbody>
+    <body name="ycb_004_sugar_box" pos="0.50395567 0.00116105 0.74681757" quat="0.43048849 0.43403991 0.55878717 0.56039799">
+      <geom material="ycb_004_sugar_box" mesh="ycb_004_sugar_box" class="obj_visual"/>
+      <geom mesh="ycb_004_sugar_box_collision_0" rgba="0.4261609961906494 0.0871754421893276 0.7602278143841172 1" class="obj_collision" condim="6" friction="1.0"/>
+      <geom mesh="ycb_004_sugar_box_collision_1" rgba="0.6431028495040515 0.6939482795299718 0.8071647285416895 1" class="obj_collision" condim="6" friction="1.0"/>
+    </body>
+  </worldbody>
+</mujoco>

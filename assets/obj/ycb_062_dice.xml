@@ -1,0 +1,24 @@
+<mujoco model="ycb_062_dice">
+  <asset>
+    <texture type="2d" name="ycb_062_dice" file="../../../obj/ycb_062_dice.png"/>
+    <material name="ycb_062_dice" texture="ycb_062_dice" specular="0.5" shininess="0.5" rgba="1 1 1 0.5"/>
+    <mesh file="../../../../obj/ycb_062_dice.obj"/>
+    <mesh file="../../../../obj/ycb_062_dice_collision_0.obj"/>
+    <mesh file="../../../../obj/ycb_062_dice_collision_1.obj"/>
+    <mesh file="../../../../obj/ycb_062_dice_collision_2.obj"/>
+    <mesh file="../../../../obj/ycb_062_dice_collision_3.obj"/>
+    <mesh file="../../../../obj/ycb_062_dice_collision_4.obj"/>
+    <mesh file="../../../../obj/ycb_062_dice_collision_5.obj"/>
+  </asset>
+  <worldbody>
+    <body name="ycb_062_dice" pos="0.50395567 0.00116105 0.70881407" quat="0.93880399 0.00340664 0.00244009 0.34442635">
+      <geom material="ycb_062_dice" mesh="ycb_062_dice" class="obj_visual"/>
+      <geom mesh="ycb_062_dice_collision_0" rgba="0.09898321945176902 0.14886690693905458 0.26809603899262335 1" class="obj_collision" condim="6" friction="1.0"/>
+      <geom mesh="ycb_062_dice_collision_1" rgba="0.6906008819112933 0.2404002386622578 0.9407942309438089 1" class="obj_collision" condim="6" friction="1.0"/>
+      <geom mesh="ycb_062_dice_collision_2" rgba="0.9008758640437635 0.08615157495980452 0.022018876582179603 1" class="obj_collision" condim="6" friction="1.0"/>
+      <geom mesh="ycb_062_dice_collision_3" rgba="0.874649010085744 0.643361861297103 0.5794832995941759 1" class="obj_collision" condim="6" friction="1.0"/>
+      <geom mesh="ycb_062_dice_collision_4" rgba="0.3547986273245821 0.5959183125375384 0.4258874858623428 1" class="obj_collision" condim="6" friction="1.0"/>
+      <geom mesh="ycb_062_dice_collision_5" rgba="0.9483500814434945 0.2891679535733285 0.514930735557128 1" class="obj_collision" condim="6" friction="1.0"/>
+    </body>
+  </worldbody>
+</mujoco>

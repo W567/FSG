@@ -1,0 +1,12 @@
+link_pc_paths:
+- workspace/srh/finger_link_0.pcd
+- workspace/srh/finger_link_1.pcd
+- workspace/srh/finger_link_2.pcd
+- workspace/srh/finger_link_3.pcd
+- workspace/srh/finger_link_4.pcd
+ws_pc_paths:
+- workspace/srh/thu.pcd
+- workspace/srh/ind.pcd
+- workspace/srh/mid.pcd
+- workspace/srh/rin.pcd
+- workspace/srh/lit.pcd

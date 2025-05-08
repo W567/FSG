@@ -1,0 +1,7 @@
+robot_name: 'robotiq85'
+
+hand_jnt_size: 2
+fin_idx_bridge: [0, 0]
+
+obj_threshold: 100
+num_try_on_grasp_threshold: 3000

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco>
+    <compiler angle="radian" coordinate="local" meshdir="assets"></compiler>
+    <option timestep="0.002" iterations="20" apirate="200" integrator="implicitfast" >
+        <flag warmstart="enable"></flag>
+    </option>
+
+    <include file="shared.xml"></include>
+
+    <asset>
+        <include file="shared_asset.xml"></include>
+    </asset>
+
+    <worldbody>
+        <include file="robot.xml"></include>
+    </worldbody>
+</mujoco>

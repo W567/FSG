@@ -1,0 +1,12 @@
+link_pc_paths:
+- workspace/ycb_004_sugar_box/finger_link_0.pcd
+- workspace/ycb_004_sugar_box/finger_link_1.pcd
+- workspace/ycb_004_sugar_box/finger_link_2.pcd
+- workspace/ycb_004_sugar_box/finger_link_3.pcd
+- workspace/ycb_004_sugar_box/finger_link_4.pcd
+ws_pc_paths:
+- workspace/ycb_004_sugar_box/thu.pcd
+- workspace/ycb_004_sugar_box/ind.pcd
+- workspace/ycb_004_sugar_box/mid.pcd
+- workspace/ycb_004_sugar_box/rin.pcd
+- workspace/ycb_004_sugar_box/lit.pcd

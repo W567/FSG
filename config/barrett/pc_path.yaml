@@ -1,0 +1,8 @@
+link_pc_paths:
+- workspace/barrett/finger_link_0.pcd
+- workspace/barrett/finger_link_1.pcd
+- workspace/barrett/finger_link_2.pcd
+ws_pc_paths:
+- workspace/barrett/thu.pcd
+- workspace/barrett/ind.pcd
+- workspace/barrett/mid.pcd

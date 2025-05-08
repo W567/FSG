@@ -1,0 +1,6 @@
+link_pc_paths:
+- workspace/robotiq85/finger_link_0.pcd
+- workspace/robotiq85/finger_link_1.pcd
+ws_pc_paths:
+- workspace/robotiq85/left.pcd
+- workspace/robotiq85/right.pcd

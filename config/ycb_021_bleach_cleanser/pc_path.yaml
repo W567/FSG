@@ -1,0 +1,12 @@
+link_pc_paths:
+- workspace/ycb_021_bleach_cleanser/finger_link_0.pcd
+- workspace/ycb_021_bleach_cleanser/finger_link_1.pcd
+- workspace/ycb_021_bleach_cleanser/finger_link_2.pcd
+- workspace/ycb_021_bleach_cleanser/finger_link_3.pcd
+- workspace/ycb_021_bleach_cleanser/finger_link_4.pcd
+ws_pc_paths:
+- workspace/ycb_021_bleach_cleanser/thu.pcd
+- workspace/ycb_021_bleach_cleanser/ind.pcd
+- workspace/ycb_021_bleach_cleanser/mid.pcd
+- workspace/ycb_021_bleach_cleanser/rin.pcd
+- workspace/ycb_021_bleach_cleanser/lit.pcd

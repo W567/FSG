@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="allegro">
+  <xacro:include filename="$(find allegro_hand_description)/urdf/allegro_hand_description_right.urdf.xacro" />
+  <link name="ik_palm" />
+  <joint name="ik_palm_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="ik_palm" />
+    <origin xyz="0 0 0" rpy="0.0 0.0 1.5707963267948963" />
+  </joint>
+</robot>

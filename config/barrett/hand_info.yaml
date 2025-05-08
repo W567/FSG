@@ -1,0 +1,9 @@
+finger_angle_num: 3
+finger_num: 3
+palm_min_max:
+- -0.0445
+- 0.0445
+- -0.0904
+- 1.0
+- -0.065
+- 0.0445
