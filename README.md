@@ -1,5 +1,7 @@
 # FSG
-Fingertip-contact-aware Sampling-based Grasp Generator
+Fingertip-contact-aware Sampling-based Grasp Generator 
+
+[Supplymentary Video](https://drive.google.com/file/d/1NCheT9A_gutW08XXJ48Dw5rEIAw8QUyU/view?usp=sharing)
 
 ## 1. Project Structure
 
