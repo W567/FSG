@@ -1,7 +1,6 @@
 # FSG
-Fingertip-contact-aware Sampling-based Grasp Generator 
 
-FSG is a sampling-based grasp generation framework that generates dexterous grasp poses using fingertip contact constraints. The project supports various multi-finger robot hands and integrates with ROS for grasp data generation.
+FSG is a Fingertip-contact-aware Sampling-based Grasp Generator that generates dexterous grasp poses using fingertip contact constraints. The project supports various multi-finger robot hands and integrates with ROS for grasp data generation.
 
 Please refer to [the pdfs directory](pdfs) for manuscripts related to this project, and watch [the Supplementary Video](https://drive.google.com/file/d/1NCheT9A_gutW08XXJ48Dw5rEIAw8QUyU/view?usp=sharing) for the experimental setup and results.
 
@@ -154,3 +153,22 @@ Attention:
 1. If AutoWS.py takes too long to generate the workspace clouds, 
 it is usually because the cloud to be generated contains too many points (too many joint combinations).
 Please try to set the angle step larger, or set the target joint angle range smaller.
+
+## 4. Citation
+
+If this project helps, please cite with
+
+```
+@article{fsg,
+  author = {Liqi Wu and Haoyu Jia and Kento Kawaharazuka and Hirokazu Ishida and Kei Okada},
+  title = {Dexterous grasp data augmentation based on grasp synthesis with fingertip workspace cloud and contact-aware sampling},
+  journal = {Advanced Robotics},
+  volume = {39},
+  number = {12},
+  pages = {730--747},
+  year = {2025},
+  publisher = {Taylor \& Francis},
+  doi = {10.1080/01691864.2025.2524553},
+  URL = {https://doi.org/10.1080/01691864.2025.2524553}
+}
+```
