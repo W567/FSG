@@ -1,7 +1,9 @@
 # FSG
 Fingertip-contact-aware Sampling-based Grasp Generator 
 
-[Supplymentary Video](https://drive.google.com/file/d/1NCheT9A_gutW08XXJ48Dw5rEIAw8QUyU/view?usp=sharing)
+FSG is a sampling-based grasp generation framework that generates dexterous grasp poses using fingertip contact constraints. The project supports various multi-finger robot hands and integrates with ROS for grasp data generation.
+
+Please refer to [the pdfs directory](pdfs) for manuscripts related to this project, and watch [the Supplementary Video](https://drive.google.com/file/d/1NCheT9A_gutW08XXJ48Dw5rEIAw8QUyU/view?usp=sharing) for the experimental setup and results.
 
 ## 1. Project Structure
 
